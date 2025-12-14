@@ -1,0 +1,117 @@
+═══════════════════════════════════════════════════════════════
+                        ŽIVOTOPIS
+═══════════════════════════════════════════════════════════════
+
+OSOBNÉ ÚDAJE
+─────────────────────────────────────────────────────────────
+Meno:               Vaše Meno
+Email:              vas.email@example.com
+Telefón:            +421 XXX XXX XXX
+LinkedIn:           linkedin.com/in/yourprofile
+GitHub:             github.com/yourusername
+Web:                vasa-stranka.com
+
+
+O MNE
+─────────────────────────────────────────────────────────────
+Som vývojár so záujmom o webové technológie a mobilné aplikácie.
+Špecializujem sa na TypeScript, React a moderné webové frameworky.
+Mám skúsenosti s full-stack vývojom a rád sa učím nové technológie.
+
+
+VZDELANIE
+─────────────────────────────────────────────────────────────
+2020 - Súčasnosť
+Názov školy / Univerzity
+Študijný odbor: Informatika / Programovanie
+
+Dosiahnuté výsledky:
+• Úspešné absolvovanie kurzov programovania
+• Realizácia školských projektov v tímoch
+• Účasť na hackathonoch a programátorských súťažiach
+
+
+PRACOVNÉ SKÚSENOSTI / PROJEKTY
+─────────────────────────────────────────────────────────────
+2024
+Full-Stack Web Developer (Projekty)
+• Vývoj osobných a školských projektov
+• Implementácia REST API a databázových riešení
+• Práca s Reactom, TypeScriptom a Node.js
+
+2023
+Junior Developer (Školské projekty)
+• Tímová spolupráca na väčších projektoch
+• Verziovanie kódu pomocou Git
+• Testovanie a debugging aplikácií
+
+
+TECHNICKÉ ZRUČNOSTI
+─────────────────────────────────────────────────────────────
+Programovacie jazyky:
+• TypeScript, JavaScript (pokročilý)
+• Python (stredný)
+• Java, C++ (základný)
+
+Frontend:
+• React, React Native
+• Vue.js
+• HTML5, CSS3, Tailwind CSS
+• Responsive Web Design
+
+Backend:
+• Node.js, Express
+• Django
+• REST API, GraphQL
+
+Databázy:
+• PostgreSQL, MySQL
+• MongoDB
+• Firebase
+
+Nástroje a Technológie:
+• Git, GitHub
+• Docker (základy)
+• VS Code, IntelliJ IDEA
+• Figma
+• Agile/Scrum metodológia
+
+
+JAZYKOVÉ ZNALOSTI
+─────────────────────────────────────────────────────────────
+• Slovenčina - rodný jazyk
+• Angličtina - pokročilá (B2/C1)
+• Nemčina - základná (A2) [voliteľné]
+
+
+CERTIFIKÁTY A KURZY
+─────────────────────────────────────────────────────────────
+• React - The Complete Guide (Udemy, 2024)
+• TypeScript Masterclass (Online, 2024)
+• Full-Stack Web Development (Codecademy, 2023)
+
+
+OSOBNÉ PROJEKTY
+─────────────────────────────────────────────────────────────
+Portfolio Website
+• Osobná webová stránka vytvorená v React + TypeScript
+• Responsive dizajn, moderný UI
+• Implementácia routing a state managementu
+
+Mobilná aplikácia (Android)
+• Aplikácia vytvorená v React Native
+• Publikovaná na Google Play Store
+• Firebase backend integrácia
+
+
+ZÁUJMY A HOBBY
+─────────────────────────────────────────────────────────────
+• Programovanie a nové technológie
+• Open-source príspevky
+• Technologické blogy a podcasty
+• Gaming, šport [upravte podľa seba]
+
+
+═══════════════════════════════════════════════════════════════
+Tento životopis bol vygenerovaný: December 2025
+═══════════════════════════════════════════════════════════════
