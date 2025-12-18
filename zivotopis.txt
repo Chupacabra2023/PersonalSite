@@ -5,7 +5,7 @@
 OSOBNÉ ÚDAJE
 ─────────────────────────────────────────────────────────────
 Meno:               Vaše Meno
-Email:              vas.email@example.com
+Email:              Email: marcelus868@gmail.com
 Telefón:            +421 XXX XXX XXX
 LinkedIn:           linkedin.com/in/yourprofile
 GitHub:             github.com/yourusername
