@@ -83,7 +83,7 @@ const ProjectDetail = () => {
             </p>
             <div className="policies-links">
               <a
-                href="/policies/privacy-policy.html"
+                href="/PersonalSite/policies/privacy-policy.html"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="policy-link"
@@ -95,7 +95,7 @@ const ProjectDetail = () => {
                 </div>
               </a>
               <a
-                href="/policies/terms-of-service.html"
+                href="/PersonalSite/policies/terms-of-service.html"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="policy-link"
