@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0;url=/PersonalSite/" />
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <script>
+      // Redirect to main page with the path stored
+      sessionStorage.setItem('redirect', window.location.pathname);
+      window.location.href = '/PersonalSite/';
+    </script>
+  </body>
+</html>
