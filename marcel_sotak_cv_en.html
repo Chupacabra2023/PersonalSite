@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<!-- saved from url=(0099)file:///C:/Users/marma/OneDrive/Desktop/praca/projekty/zivotopis%20a%20veci/marcel_sotak_cv_en.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcel Soták - CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./marcel_sotak_cv_en_files/css2" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --orange: #E67E22;
+            --dark-gray: #2C3E50;
+            --light-gray: #7F8C8D;
+            --text-color: #333;
+            --bg-color: #fff;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 10pt;
+            line-height: 1.3;
+            color: var(--text-color);
+            background: #f5f5f5;
+        }
+
+        .cv-container {
+            max-width: 210mm;
+            margin: 20px auto;
+            background: var(--bg-color);
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 0 20mm;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .header-left {
+            flex: 1;
+        }
+
+        .name {
+            font-size: 36pt;
+            font-weight: 700;
+            color: var(--dark-gray);
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 14pt;
+            color: var(--orange);
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            font-size: 10pt;
+        }
+
+        .contact-info p {
+            margin: 3px 0;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            display: inline-block;
+            width: 120px;
+        }
+
+        .contact-info a {
+            color: var(--orange);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .photo {
+            width: 120px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+
+        .photo-placeholder {
+            width: 120px;
+            height: 150px;
+            background: #eee;
+            border-radius: 5px;
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 9pt;
+            text-align: center;
+        }
+
+        /* Section titles */
+        .section-title {
+            font-size: 14pt;
+            font-weight: 700;
+            color: var(--orange);
+            margin: 15px 0 10px 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid var(--orange);
+        }
+
+        .section-title_omne {
+            font-size: 14pt;
+            font-weight: 700;
+            color: var(--orange);
+            margin: 15px 0 0px 0;
+            padding-bottom: 5px;
+
+        }
+
+        .section-title:first-of-type {
+            margin-top: 15px;
+        }
+
+        /* About section */
+        .about-text {
+            text-align: justify;
+            line-height: 1.3;
+        }
+
+        /* Skills */
+        .skills-list p {
+            margin: 3px 0;
+        }
+
+        .skill-category {
+            font-weight: 600;
+            color: var(--orange);
+        }
+
+        /* Experience entries */
+        .experience-entry {
+            margin-bottom: 10px;
+        }
+
+        .experience-title {
+            font-weight: 600;
+            font-size: 11pt;
+            color: var(--text-color);
+        }
+
+        .experience-company {
+            color: var(--light-gray);
+            font-size: 10pt;
+        }
+
+        .experience-description {
+            margin-top: 5px;
+            text-align: justify;
+        }
+
+        /* Education */
+        .education-entry {
+            margin-bottom: 8px;
+        }
+
+        .education-degree {
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .education-school {
+            color: var(--light-gray);
+        }
+
+        /* Projects */
+        .projects-links {
+            margin-bottom: 15px;
+        }
+
+        .projects-links a {
+            color: var(--orange);
+            text-decoration: none;
+        }
+
+        .project-year {
+            font-weight: 600;
+            color: var(--orange);
+            margin-top: 12px;
+            margin-bottom: 5px;
+        }
+
+        .project-year-new-page {
+            font-weight: 600;
+            color: var(--orange);
+            margin-top: 12px;
+            margin-bottom: 5px;
+            page-break-before: always;
+        }
+
+        .project-item {
+            margin: 3px 0;
+        }
+
+        .project-name {
+            font-weight: 600;
+            color: #000;
+        }
+
+        /* Own projects */
+        .own-project {
+            margin-bottom: 15px;
+        }
+
+        .own-project-title {
+            font-weight: 700;
+            color: var(--dark-gray);
+        }
+
+        /* Certificates */
+        .certificate-entry {
+            margin-bottom: 10px;
+        }
+
+        .certificate-name {
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .certificate-desc {
+            color: var(--light-gray);
+            font-size: 9pt;
+        }
+
+        /* Languages & Interests */
+        .simple-list p {
+            margin: 3px 0;
+        }
+
+        .simple-list strong {
+            font-weight: 600;
+        }
+
+        .two-column-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .column {
+            min-width: 0;
+        }
+        .foto{
+            width: 190px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+
+        .orange-section {
+            background: linear-gradient(to bottom, #E67E22 8mm, #fde8d7 8mm);
+            margin: 0 -20mm 20px -20mm;
+            padding: 8mm 20mm 20px 20mm;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+            color-adjust: exact;
+        }
+
+        /* Page break for work experience */
+        .new-page {
+            page-break-before: always;
+        }
+
+        /* Print styles */
+        @page {
+            margin: 0;
+            size: A4;
+        }
+
+        @media print {
+            body {
+                background: white;
+                margin: 0;
+                padding: 0;
+            }
+
+            .cv-container {
+                box-shadow: none;
+                margin: 0;
+                padding: 0 15mm;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="orange-section">
+            <header class="header">
+                <div class="header-left">
+                    <h1 class="name">MARCEL SOTÁK</h1>
+                    <p class="subtitle">Software Developer &amp; IT Student</p>
+                    <div class="contact-info">
+                        <p><span class="contact-label">Date of Birth:</span> 01.10.2000</p>
+                        <p><span class="contact-label">Email:</span> <a href="mailto:marcel.sotak123@gmail.com">marcel.sotak123@gmail.com</a></p>
+                        <p><span class="contact-label">Phone:</span> +421 940 751 820</p>
+                        <p><span class="contact-label">Web:</span> <a href="https://chupacabra2023.github.io/PersonalSite" target="_blank">chupacabra2023.github.io/PersonalSite</a></p>
+                    </div>
+                </div>
+
+                <img class="foto" src="./marcel_sotak_cv_en_files/foto.jpg" alt="Marcel Soták">
+            </header>
+
+            <h2 class="section-title_omne">ABOUT ME</h2>
+            <p class="about-text">
+                I am a 5th-year student at the Faculty of Electrical Engineering and Information Technology (FEI STU).
+                 I completed my bachelor’s degree in Applied Informatics and am currently pursuing a master’s degree in Cybersecurity, 
+                 although I enjoy programming more. Recently, in my free time, I have started developing applications and games. 
+                 I enjoy thinking about simple projects that I can bring to completion and that are genuinely useful.
+            </p>
+        </div>
+        <h2 class="section-title">TECHNICAL SKILLS</h2>
+        <div class="skills-list">
+            <p><span class="skill-category">Intermediate:</span> React, Dart, Kotlin, CSS, HTML, SQL, Java, React Native</p>
+            <p><span class="skill-category">Beginner:</span> PHP, Python, C, C++, C#, JavaScript</p>
+            <p><span class="skill-category">Tools:</span> Adobe After Effects, Sony Vegas Pro, Photoshop, DaVinci Resolve</p>
+            <p><span class="skill-category">Services:</span> Supabase, PostgreSQL, Firebase</p>
+        </div>
+
+        <h2 class="section-title">WORK EXPERIENCE – IT</h2>
+
+        <div class="experience-entry">
+            <p class="experience-title">Python Developer</p>
+            <p class="experience-company">BlueLemon Solutions · 10/2022 – 03/2023</p>
+            <p class="experience-description">AI development in Python – predictive model for forecasting days with lower energy consumption for an energy company.</p>
+        </div>
+
+        <div class="experience-entry">
+            <p class="experience-title">Intern – Document Development</p>
+            <p class="experience-company">Softec · 06/2022 – 08/2022</p>
+            <p class="experience-description">Creating templates for automated document generation. Working with XML, Word templates, and internal templating language.</p>
+        </div>
+
+        <div class="experience-entry">
+            <p class="experience-title">QA Tester</p>
+            <p class="experience-company">iTaps · 06/2022 – 08/2022</p>
+            <p class="experience-description">Manual software testing for various clients. Using Jira tool for bug tracking.</p>
+        </div>
+
+        <div class="experience-entry">
+            <p class="experience-title">Photo Editor</p>
+            <p class="experience-company">SportZoo · 10/2024 – present</p>
+            <p class="experience-description">Cropping and editing product photographs.</p>
+        </div>
+
+        <div class="experience-entry">
+            <p class="experience-title">Freelance Graphic Designer / Video Editor</p>
+            <p class="experience-company">Jaspravím.sk · 2020 – present</p>
+            <p class="experience-description">Photo editing in Photoshop and video editing for various clients.</p>
+        </div>
+
+        <h2 class="section-title new-page">OTHER WORK EXPERIENCE</h2>
+
+        <div class="experience-entry">
+            <p class="experience-title">Warehouse Worker</p>
+            <p class="experience-company">Kruidvat (Netherlands) · 06/2024 – 08/2024</p>
+            <p class="experience-description">Warehouse work – order picking.</p>
+        </div>
+
+        <div class="experience-entry">
+            <p class="experience-title">Warehouse Worker</p>
+            <p class="experience-company">Book Warehouse (Netherlands) · 06/2023 – 08/2023</p>
+            <p class="experience-description">Sorting and processing books.</p>
+        </div>
+
+        <div class="experience-entry">
+            <p class="experience-title">Seasonal Worker</p>
+            <p class="experience-company">McIntire Fruit Ltd (Scotland) · 06/2021 – 08/2021</p>
+            <p class="experience-description">Seasonal agricultural work – fruit picking.</p>
+        </div>
+
+        <div class="experience-entry">
+            <p class="experience-title">Seasonal Worker</p>
+            <p class="experience-company">McIntire Fruit Ltd (Scotland) · 06/2020 – 08/2020</p>
+            <p class="experience-description">Seasonal agricultural work – fruit picking.</p>
+        </div>
+
+        <div class="experience-entry">
+            <p class="experience-title">Warehouse Worker</p>
+            <p class="experience-company">Macom – meat warehouse · 06/2018 – 08/2018</p>
+            <p class="experience-description">Packing and shipping goods.</p>
+        </div>
+
+        <h2 class="section-title">EDUCATION</h2>
+
+        <div class="education-entry">
+            <p class="education-degree">MSc. Cyber Security – in progress</p>
+            <p class="education-school">Slovak University of Technology, FEI · 2024 – present</p>
+        </div>
+
+        <div class="education-entry">
+            <p class="education-degree">BSc. Applied Informatics</p>
+            <p class="education-school">Slovak University of Technology, FEI · 2020 – 2024</p>
+        </div>
+
+        <div class="education-entry">
+            <p class="education-degree">High School Diploma – Technical Lyceum</p>
+            <p class="education-school">SPŠE Košice · 2016 – 2020</p>
+        </div>
+
+        <h2 class="section-title">PERSONAL PROJECTS</h2>
+
+        <div class="experience-entry">
+            <p class="experience-title">Foreign Language Vocabulary Learning App &nbsp;<span style="font-weight:400;font-size:9pt;color:var(--light-gray)">– coming soon to Google Play</span></p>
+            <p class="experience-company">Kotlin · Jetpack Compose · Material3 · Supabase · DataStore · minSdk 26</p>
+            <p class="experience-description">Independently developed Android application supporting 20 languages, featuring 40 levels of the most frequent words and 20 thematic levels (chemistry, anatomy, professions, etc.).</p>
+            <ul style="margin-top:4px;padding-left:18px;">
+                <li>Local persistence via DataStore, Supabase backend</li>
+                <li>Text-to-Speech pronunciation in the selected language, swipe gesture to mark learned words</li>
+                <li>Configurable number of answer choices, many color themes, multiple languages</li>
+            </ul>
+        </div>
+
+        <div class="experience-entry">
+            <p class="experience-title">Time Repeater &nbsp;<span style="font-weight:400;font-size:9pt;color:var(--light-gray)">- Google Play Store · 2024–2025</span></p>
+            <p class="experience-company">Kotlin · Android SDK · RecyclerView · Firebase Analytics · ProGuard</p>
+            <p class="experience-description">Android multi-timer application for managing multiple timers simultaneously, with an advanced alarm system that continues working even after the app is killed by the system.</p>
+            <ul style="margin-top:4px;padding-left:18px;">
+                <li>Persistent layer via SharedPreferences + Gson, no external database</li>
+                <li>Localization into 6 languages (SK, EN, DE, ES, FR, RU) with dynamic locale change at runtime</li>
+                <li>Notifications with full-screen intent, vibrations, and custom alarm sound logic (MediaPlayer with looping)</li>
+                <li>RecyclerView with drag-to-reorder, custom HueBar View (HSV color picker), signed release build</li>
+            </ul>
+        </div>
+
+        <p class="project-item"><span class="project-name">Snowball Roll Down</span> (Unity, C#) – mobile game on <a href="https://play.google.com/store/apps/details?id=com.marcels.snowballrolldown" target="_blank">Google Play Store</a>. A ball rolls down a hill, collecting coins and power-ups while dodging obstacles. Features upgrade system, global leaderboards via Google Play Games Services, and AdMob monetization.</p>
+
+        <p class="project-item"><span class="project-name">Soundboard Studio</span> (Flutter, Dart, Kotlin) – mobile application on <a href="https://play.google.com/store/apps/details?id=sk.marcelsotak.soundboard" target="_blank">Google Play Store</a>, allows creation of custom soundboards, sound recording, and layout editing. Complete publishing process including app signing and content policies.</p>
+
+        <p class="project-item"><span class="project-name">Farm Idle Game</span> (Unity, C#) <em>– in development</em>. Mobile Android idle farm game with daily rewards. The player manages multiple farm scenes with different types of animals and fields, collecting resources by tapping.</p>
+
+        <p class="project-item"><span class="project-name">Match-3 RPG</span> (Unity, C#) <em>– in development</em>. Mobile Android game combining match-3 mechanics with a combat system. Each hero has unique abilities that activate upon matching three tiles and provide boosts during battles against enemies.</p>
+
+        <h2 class="section-title">ACADEMIC PROJECTS</h2>
+
+        <div class="projects-links">
+            <p><strong>Portfolio:</strong> <a href="https://chupacabra2023.github.io/PersonalSite/#/projects" target="_blank">chupacabra2023.github.io/PersonalSite/#/projects</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/MarcelSotak111443/school-work" target="_blank">github.com/MarcelSotak111443/school-work</a></p>
+        </div>
+
+        <p class="project-year">High School</p>
+        <p class="project-item">
+            <span class="project-name">Lunch Rating System</span> (Arduino, C, PHP, SQL, JavaScript, HTML, CSS) –
+            hardware application for rating lunches using buttons and a chip, sending data to database, and a website with rating statistics.
+        </p>
+
+        <p class="project-year">BSc. Year 1</p>
+        <p class="project-item"><span class="project-name">Ludo Game</span> (Python) – game with game logic</p>
+        <p class="project-item"><span class="project-name">Monster Battle</span> (C) – working with pointers</p>
+
+        <p class="project-year">BSc. Year 2</p>
+        <p class="project-item"><span class="project-name">Rocket Flight Simulation</span> (C++) – setting initial values, tracking movement in terminal</p>
+        <p class="project-item"><span class="project-name">Duck Hunt</span> (Java) – terminal game similar to duck hunt</p>
+        <p class="project-item"><span class="project-name">Reversi</span> (Java) – graphical Reversi game</p>
+        <p class="project-item"><span class="project-name">REST API</span> (Spring Boot) – backend API</p>
+
+        <p class="project-year">BSc. Year 3</p>
+        <p class="project-item"><span class="project-name">Web Technologies Basics</span> (HTML, CSS, JavaScript) – practicing basics, working with elements and interaction</p>
+        <p class="project-item"><span class="project-name">Lunch Menus</span> (Bash, curl, HTML) – automatic data retrieval from various restaurants and combining them into one website with filtering options</p>
+        <p class="project-item"><span class="project-name">Athletes Management</span> (PHP, SQL) – web application with database, merging and selecting athletes into tables with filtering options</p>
+        <p class="project-item"><span class="project-name">Map Application</span> (PHP, JavaScript, Leaflet) – application utilizing external REST APIs (geolocation, weather, countries), displaying data on an interactive map and storing visits in MySQL database with subsequent statistical analysis</p>
+        <p class="project-item"><span class="project-name">WebSocket Ping Pong</span> (JavaScript, WebSocket) – web game, bouncing ball for up to 4 players in real-time using websockets</p>
+        <p class="project-item"><span class="project-name">RPG Game</span> (JavaScript, Phaser) – game with game logic, quest system, difficulty levels, and UI menu. PWA functionality support (Service Worker, manifest) for offline mode</p>
+        <p class="project-item"><span class="project-name">Bachelor's Thesis</span> (React, Node.js) – controlling Arduino board with dynamic system using web application and node.js</p>
+
+        <p class="project-year">MSc. Year 1</p>
+        <p class="project-item"><span class="project-name">Neural Networks</span> (Python) – image recognition, classification, and value prediction</p>
+        <p class="project-item"><span class="project-name">Network Scanner</span> (Python, Nmap) – network scanning and storing in NetBox</p>
+
+        <p class="project-year">MSc. Year 2</p>
+        <p class="project-item"><span class="project-name">Recipe Swiper</span> (React Native, Supabase) – swiping recipes, login/register, rating, saving, reporting, database utilization</p>
+        <p class="project-item"><span class="project-name">Geofence App</span> (Kotlin) – nearby users, profiles, LiveData, RecyclerView, login/register, workers, geofence, viewmodel, SharedPreferences, DataBinding, fragments</p>
+        <p class="project-item"><span class="project-name">Joinly — Master's Thesis</span> (Kotlin · Jetpack Compose · Firebase · Google Maps · MVVM) – Full-featured Android application for discovering and managing events with 15+ functional modules. Single-Activity architecture, Firebase Firestore real-time database, authentication (email + Google Sign-In), real-time chat, QR check-in (CameraX + ML Kit), 6-factor recommendation algorithm, participation penalty system, integration of Google Maps API, Cloudinary, ZXing. Covered by unit tests.</p>
+
+        <h2 class="section-title">CERTIFICATES</h2>
+
+        <div class="certificate-entry">
+            <p class="certificate-name">Autodesk – Certificate of Project Completion</p>
+            <p class="certificate-desc">Project in Autodesk application</p>
+        </div>
+
+        <div class="certificate-entry">
+            <p class="certificate-name">Ja Slovensko – More Than Money</p>
+            <p class="certificate-desc">Entrepreneurial, economic, and financial education</p>
+        </div>
+
+        <div class="certificate-entry">
+            <p class="certificate-name">Direct Language Lab – Certificate of Studies</p>
+            <p class="certificate-desc">English language course</p>
+        </div>
+
+        <div class="certificate-entry">
+            <p class="certificate-name">Selenium Java Test Framework &amp; Best Practices – Masterclass</p>
+            <p class="certificate-desc">Online course</p>
+        </div>
+
+        <div class="certificate-entry">
+            <p class="certificate-name">The Complete 2025 Software Testing Bootcamp</p>
+            <p class="certificate-desc">Online course</p>
+        </div>
+
+        <div class="two-column-section">
+            <div class="column">
+                <h2 class="section-title">LANGUAGES</h2>
+                <div class="simple-list">
+                    <p><strong>Slovak</strong> – native language</p>
+                    <p><strong>English</strong> – B2</p>
+                    <p><strong>German</strong> – A1</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <h2 class="section-title">INTERESTS</h2>
+                <div class="simple-list">
+                    <p>Volleyball, weightlifting, calisthenics</p>
+                    <p>Educational literature (nature, health, universe)</p>
+                    <p>Playing guitar, game development</p>
+                    <p>Creating mobile applications</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body></html>

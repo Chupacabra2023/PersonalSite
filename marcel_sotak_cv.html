@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)file:///C:/Users/marma/OneDrive/Desktop/praca/projekty/zivotopis%20a%20veci/marcel_sotak_cv.html -->
+<html lang="sk"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcel Soták - CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./marcel_sotak_cv_files/css2" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --orange: #E67E22;
+            --dark-gray: #2C3E50;
+            --light-gray: #7F8C8D;
+            --text-color: #333;
+            --bg-color: #fff;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 10pt;
+            line-height: 1.3;
+            color: var(--text-color);
+            background: #f5f5f5;
+        }
+
+        .cv-container {
+            max-width: 210mm;
+            margin: 20px auto;
+            background: var(--bg-color);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 0 20mm;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .header-left {
+            flex: 1;
+        }
+
+        .name {
+            font-size: 36pt;
+            font-weight: 700;
+            color: var(--dark-gray);
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 14pt;
+            color: var(--orange);
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            font-size: 10pt;
+        }
+
+        .contact-info p {
+            margin: 3px 0;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            display: inline-block;
+            width: 120px;
+        }
+
+        .contact-info a {
+            color: var(--orange);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .photo {
+            width: 120px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+
+        .photo-placeholder {
+            width: 120px;
+            height: 150px;
+            background: #eee;
+            border-radius: 5px;
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 9pt;
+            text-align: center;
+        }
+
+        /* Section titles */
+        .section-title {
+            font-size: 14pt;
+            font-weight: 700;
+            color: var(--orange);
+            margin: 15px 0 10px 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid var(--orange);
+        }
+
+        .section-title_omne {
+            font-size: 14pt;
+            font-weight: 700;
+            color: var(--orange);
+            margin: 15px 0 0px 0;
+            padding-bottom: 5px;
+
+        }
+
+        .section-title:first-of-type {
+            margin-top: 15px;
+        }
+
+        /* About section */
+        .about-text {
+            text-align: justify;
+            line-height: 1.3;
+        }
+
+        /* Skills */
+        .skills-list p {
+            margin: 3px 0;
+        }
+
+        .skill-category {
+            font-weight: 600;
+            color: var(--orange);
+        }
+
+        /* Experience entries */
+        .experience-entry {
+            margin-bottom: 10px;
+        }
+
+        .experience-title {
+            font-weight: 600;
+            font-size: 11pt;
+            color: var(--text-color);
+        }
+
+        .experience-company {
+            color: var(--light-gray);
+            font-size: 10pt;
+        }
+
+        .experience-description {
+            margin-top: 5px;
+            text-align: justify;
+        }
+
+        /* Education */
+        .education-entry {
+            margin-bottom: 8px;
+        }
+
+        .education-degree {
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .education-school {
+            color: var(--light-gray);
+        }
+
+        /* Projects */
+        .projects-links {
+            margin-bottom: 15px;
+        }
+
+        .projects-links a {
+            color: var(--orange);
+            text-decoration: none;
+        }
+
+        .project-year {
+            font-weight: 600;
+            color: var(--orange);
+            margin-top: 12px;
+            margin-bottom: 5px;
+        }
+
+        .project-year-new-page {
+            font-weight: 600;
+            color: var(--orange);
+            margin-top: 12px;
+            margin-bottom: 5px;
+            page-break-before: always;
+        }
+
+        .project-item {
+            margin: 3px 0;
+        }
+
+        .project-name {
+            font-weight: 600;
+            color: #000;
+        }
+
+        /* Own projects */
+        .own-project {
+            margin-bottom: 15px;
+        }
+
+        .own-project-title {
+            font-weight: 700;
+            color: var(--dark-gray);
+        }
+
+        /* Certificates */
+        .certificate-entry {
+            margin-bottom: 10px;
+        }
+
+        .certificate-name {
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .certificate-desc {
+            color: var(--light-gray);
+            font-size: 9pt;
+        }
+
+        /* Languages & Interests */
+        .simple-list p {
+            margin: 3px 0;
+        }
+
+        .simple-list strong {
+            font-weight: 600;
+        }
+
+        .two-column-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .column {
+            min-width: 0;
+        }
+
+        .foto {
+            width: 190px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+
+        .orange-section {
+            background: linear-gradient(to bottom, #E67E22 8mm, #fde8d7 8mm);
+            margin: 0 -20mm 20px -20mm;
+            padding: 8mm 20mm 20px 20mm;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+            color-adjust: exact;
+        }
+
+        /* Page break for work experience */
+        .new-page {
+            page-break-before: always;
+        }
+
+        /* Print styles */
+        @page {
+            margin: 0;
+            size: A4;
+        }
+
+        @media print {
+            body {
+                background: white;
+                margin: 0;
+                padding: 0;
+            }
+
+            .cv-container {
+                box-shadow: none;
+                margin: 0;
+                padding: 0 15mm;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cv-container">
+        <div class="orange-section">
+            <header class="header">
+                <div class="header-left">
+                    <h1 class="name">MARCEL SOTÁK</h1>
+                    <p class="subtitle">Software Developer &amp; IT Student</p>
+                    <div class="contact-info">
+                        <p><span class="contact-label">Dátum narodenia:</span> 01.10.2000</p>
+                        <p><span class="contact-label">Email:</span> <a href="mailto:marcel.sotak123@gmail.com">marcel.sotak123@gmail.com</a></p>
+                        <p><span class="contact-label">Telefón:</span> +421 940 751 820</p>
+                        <p><span class="contact-label">Web:</span> <a href="https://chupacabra2023.github.io/PersonalSite" target="_blank">chupacabra2023.github.io/PersonalSite</a></p>
+                    </div>
+                </div>
+
+                <img class="foto" src="./marcel_sotak_cv_files/foto.jpg" alt="Marcel Soták">
+            </header>
+
+            <h2 class="section-title_omne">O MNE</h2>
+            <p class="about-text">
+                Študent 5. ročníka na FEI STU. Bakalárske štúdium som absolvoval v odbore Aplikovaná informatika, 
+                aktuálne pokračujem v inžinierskom štúdiu v odbore Kybernetická bezpečnosť, no viac ma baví samotné programovanie.
+                 V poslednom období sa vo voľnom čase venujem vývoju aplikácií a hier. Baví ma premýšľať nad jednoduchými projektami,
+                  ktoré dokážem dotiahnuť do konca a ktoré sú reálne užitočné.
+            </p>
+        </div>
+        <h2 class="section-title">TECHNICKÉ ZRUČNOSTI</h2>
+        <div class="skills-list">
+            <p><span class="skill-category">Mierne pokročilý:</span> React, Dart, Kotlin, CSS, HTML, SQL, Java, React
+                Native, </p>
+            <p><span class="skill-category">Začiatočník:</span> PHP, Python, C, C++, C#, JavaScript </p>
+            <p><span class="skill-category">Nástroje:</span> Adobe After Effects, Sony Vegas Pro, Photoshop, DaVinci
+                Resolve</p>
+            <p><span class="skill-category">Služby:</span> Supabase, PostgreSQL, Firebase</p>
+        </div>
+
+        <h2 class="section-title">PRACOVNÉ SKÚSENOSTI – IT</h2>
+
+        <div class="experience-entry">
+            <p class="experience-title">Vývojár v Pythone</p>
+            <p class="experience-company">BlueLemon Solutions · 10/2022 – 03/2023</p>
+            <p class="experience-description">Vývoj AI v Pythone – predikčný model na predpovedanie dní s nižšou
+                spotrebou energie pre energetickú spoločnosť.</p>
+        </div>
+
+        <div class="experience-entry">
+            <p class="experience-title">Stážista – Document Development</p>
+            <p class="experience-company">Softec · 06/2022 – 08/2022</p>
+            <p class="experience-description">Tvorba šablón pre automatizované generovanie dokumentov. Práca s XML, Word
+                šablónami a interným šablónovacím jazykom.</p>
+        </div>
+
+        <div class="experience-entry">
+            <p class="experience-title">QA Tester</p>
+            <p class="experience-company">iTaps · 06/2022 – 08/2022</p>
+            <p class="experience-description">Manuálne testovanie softvéru pre rôznych klientov. Používanie nástroja
+                Jira na evidenciu bugov.</p>
+        </div>
+
+        <div class="experience-entry">
+            <p class="experience-title">Editor fotografií</p>
+            <p class="experience-company">SportZoo · 10/2024 – súčasnosť</p>
+            <p class="experience-description">Orez a úprava produktových fotografií.</p>
+        </div>
+
+        <div class="experience-entry">
+            <p class="experience-title">Freelance Grafik / Video Editor</p>
+            <p class="experience-company">Jaspravím.sk · 2020 – súčasnosť</p>
+            <p class="experience-description">Úprava fotografií vo Photoshope a editácia videí pre rôznych klientov.</p>
+        </div>
+
+        <h2 class="section-title new-page">OSTATNÉ PRACOVNÉ SKÚSENOSTI</h2>
+
+        <div class="experience-entry">
+            <p class="experience-title">Skladník</p>
+            <p class="experience-company">Kruidvat (Holandsko) · 06/2024 – 08/2024</p>
+            <p class="experience-description">Skladová práca – vychystávanie objednávok.</p>
+        </div>
+
+        <div class="experience-entry">
+            <p class="experience-title">Skladník</p>
+            <p class="experience-company">Knižný sklad (Holandsko) · 06/2023 – 08/2023</p>
+            <p class="experience-description">Triedenie a spracovanie kníh.</p>
+        </div>
+
+        <div class="experience-entry">
+            <p class="experience-title">Sezónny pracovník</p>
+            <p class="experience-company">McIntire Fruit Ltd (Škótsko) · 06/2021 – 08/2021</p>
+            <p class="experience-description">Sezónne poľnohospodárske práce – zber ovocia.</p>
+        </div>
+
+        <div class="experience-entry">
+            <p class="experience-title">Sezónny pracovník</p>
+            <p class="experience-company">McIntire Fruit Ltd (Škótsko) · 06/2020 – 08/2020</p>
+            <p class="experience-description">Sezónne poľnohospodárske práce – zber ovocia.</p>
+        </div>
+
+        <div class="experience-entry">
+            <p class="experience-title">Skladník</p>
+            <p class="experience-company">Macom – mäsový sklad · 06/2018 – 08/2018</p>
+            <p class="experience-description">Balenie a expedícia tovaru.</p>
+        </div>
+
+        <h2 class="section-title">VZDELANIE</h2>
+
+        <div class="education-entry">
+            <p class="education-degree">Ing. Kybernetická bezpečnosť – v priebehu</p>
+            <p class="education-school">Slovenská technická univerzita, FEI · 2024 – súčasnosť</p>
+        </div>
+
+        <div class="education-entry">
+            <p class="education-degree">Bc. Aplikovaná informatika</p>
+            <p class="education-school">Slovenská technická univerzita, FEI · 2020 – 2024</p>
+        </div>
+
+        <div class="education-entry">
+            <p class="education-degree">Maturita – Technické lýceum</p>
+            <p class="education-school">SPŠE Košice · 2016 – 2020</p>
+        </div>
+
+        <h2 class="section-title">VLASTNÉ PROJEKTY</h2>
+
+        <div class="experience-entry">
+            <p class="experience-title">Aplikácia na učenie slovnej zásoby cudzieho jazyka &nbsp;<span style="font-weight:400;font-size:9pt;color:var(--light-gray)">– čoskoro na Google Play</span></p>
+            <p class="experience-company">Kotlin · Jetpack Compose · Material3 · Supabase · DataStore · minSdk 26</p>
+            <p class="experience-description">Samostatne vyvinutá Android aplikácia s podporou 20 jazykov, 40 levelov najfrekventovanejších slov a 20 tematických levelov (chémia, anatómia, povolania a i.).</p>
+            <ul style="margin-top:4px;padding-left:18px;">
+                <li>Lokálna perzistencia cez DataStore, backend Supabase</li>
+                <li>Text-to-Speech výslovnosť vo vybranom jazyku, swipe gesto na označenie naučených slov</li>
+                <li>Konfigurovateľný počet odpovedí, mnoho farebných tém, viacero jazykov</li>
+            </ul>
+        </div>
+
+        <div class="experience-entry">
+            <p class="experience-title">Time Repeater &nbsp;<span style="font-weight:400;font-size:9pt;color:var(--light-gray)">- Google Play Store · 2024–2025</span></p>
+            <p class="experience-company">Kotlin · Android SDK · RecyclerView · Firebase Analytics · ProGuard</p>
+            <p class="experience-description">Android aplikácia umožňujúca správu viacerých časovačov naraz, s pokročilým systémom budíkov fungujúcim aj po ukončení aplikácie systémom.</p>
+            <ul style="margin-top:4px;padding-left:18px;">
+                <li>Perzistentná vrstva cez SharedPreferences + Gson, bez externej databázy</li>
+                <li>Lokalizácia do 6 jazykov (SK, EN, DE, ES, FR, RU) s dynamickou zmenou locale za behu</li>
+                <li>Notifikácie s full-screen intentom, vibráciami a vlastnou alarmovou zvukovou logikou (MediaPlayer)</li>
+                <li>RecyclerView s drag-to-reorder, custom View HueBar (výber farby HSV), podpísaný release build</li>
+            </ul>
+        </div>
+
+        <p class="project-item"><span class="project-name">Snowball Roll Down</span> (Unity, C#) – mobilná hra na <a href="https://play.google.com/store/apps/details?id=com.marcels.snowballrolldown" target="_blank">Google Play Store</a>. Gulička sa kotúľa dole kopcom, zbiera mince a power-upy a vyhýba sa prekážkam. Systém upgradov, globálne leaderboardy cez Google Play Games Services a AdMob monetizácia.</p>
+
+        <p class="project-item"><span class="project-name">Soundboard Studio</span> (Flutter, Dart, Kotlin) – mobilná aplikácia na <a href="https://play.google.com/store/apps/details?id=sk.marcelsotak.soundboard" target="_blank">Google Play Store</a>, umožňuje vytváranie vlastných soundboardov, nahrávanie zvukov a úpravu rozloženia. Kompletný proces publikácie vrátane app signing a content policies.</p>
+
+        <p class="project-item"><span class="project-name">Farm Idle Game</span> (Unity, C#) <em>– v vývoji</em>. Mobilná Android hra v štýle idle farmy s dennými odmenami. Hráč spravuje viacero farmárskych scén s rôznymi typmi zvierat a polí a zbiera resources kliknutím.</p>
+
+        <p class="project-item"><span class="project-name">Match-3 RPG</span> (Unity, C#) <em>– v vývoji</em>. Mobilná Android hra kombinujúca match-3 mechaniku s bojovým systémom. Každý hrdina má unikátne schopnosti aktivujúce sa pri zhode trojíc a poskytujúce boosty pri súboji s nepriateľmi.</p>
+
+        <h2 class="section-title">ŠKOLSKÉ PROJEKTY</h2>
+
+        <div class="projects-links">
+            <p><strong>Portfólio:</strong> <a href="https://chupacabra2023.github.io/PersonalSite/#/projects" target="_blank">chupacabra2023.github.io/PersonalSite/#/projects</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/MarcelSotak111443/school-work" target="_blank">github.com/MarcelSotak111443/school-work</a></p>
+        </div>
+
+        <p class="project-year">Stredná škola</p>
+        <p class="project-item">
+            <span class="project-name">Hodnotenie obedov</span> (Arduino, C, PHP, SQL, JavaScript, HTML, CSS) –
+            hardvérová aplikácia na hodnotenie obedov pomocou tlačidiel a čipu, odosielanie dát do databázy a webová
+            stránka so štatistikami hodnotení.
+        </p>
+
+        <p class="project-year">Bc. 1. ročník</p>
+        <p class="project-item"><span class="project-name">Človeče nehnevaj sa</span> (Python) – hra s hernou logikou
+        </p>
+        <p class="project-item"><span class="project-name">Súboj monštier</span> (C) – práca so smerníkmi</p>
+
+        <p class="project-year">Bc. 2. ročník</p>
+        <p class="project-item"><span class="project-name">Simulácia letu rakety</span> (C++) – nastavenie počiatočných
+            hodnôt, sledovanie pohybu v terminály</p>
+        <p class="project-item"><span class="project-name">Strelené kačky</span> (Java) – hra v terminály podobná
+            streleným kačkám</p>
+        <p class="project-item"><span class="project-name">Reversi</span> (Java) – grafická hra Reversi</p>
+        <p class="project-item"><span class="project-name">REST API</span> (Spring Boot) – backendové API</p>
+
+        <p class="project-year">Bc. 3. ročník</p>
+        <p class="project-item"><span class="project-name">Základy webových technológií</span> (HTML, CSS, JavaScript) –
+            precvičenie základov, práca s elementami a interakciou</p>
+        <p class="project-item"><span class="project-name">Jedálne lístky</span> (Bash, curl, HTML) – automatické
+            získavanie dát z rôznych podnikov a ich spojenie do jednej webovej stránky s možnosťami filtrovania</p>
+        <p class="project-item"><span class="project-name">Správa športovcov</span> (PHP, SQL) – webová aplikácia s
+            databázou, zlúčenie a výber športovcov do tabuliek s možnosťou filtrovania</p>
+        <p class="project-item"><span class="project-name">Mapová aplikácia</span> (PHP, JavaScript, Leaflet) –
+            aplikácia využívajúca externé REST API (geolokácia, počasie, krajiny), zobrazuje údaje na interaktívnej mape
+            a ukladá návštevy do MySQL databázy s následnou štatistickou analýzou</p>
+        <p class="project-item"><span class="project-name">WebSocket ping pong</span> (JavaScript, WebSocket) – Webová
+            hra. odrádzanie loptičky až pre 4 hráčov v reálnom čase pomocou websocketov</p>
+        <p class="project-item"><span class="project-name">RPG hra</span> (JavaScript, Phaser) – hra s hernou logikou,
+            quest systémom, obtiažnosťami a UI menu. Podpora PWA funkcionality (Service Worker, manifest) pre offline
+            režim</p>
+        <p class="project-item"><span class="project-name">Bakalárska práca</span> (React, Node.js) – ovládanie Arduino
+            dosky s dynamickým systémom pomocou webovej aplikácie a node.js</p>
+
+        <p class="project-year">Ing. 1. ročník</p>
+        <p class="project-item"><span class="project-name">Neurónové siete</span> (Python) – rozpoznávanie obrázkov,
+            roztriedenie a predikcia hodnoty</p>
+        <p class="project-item"><span class="project-name">Network Scanner</span> (Python, Nmap) – skenovanie siete a
+            ukladanie do NetBoxu</p>
+
+        <p class="project-year">Ing. 2. ročník</p>
+        <p class="project-item"><span class="project-name">Recipe Swiper</span> (React Native, Supabase) – swajpovanie
+            receptov, login/register, hodnotenie, ukladanie, nahlasenie, využitie databázy</p>
+        <p class="project-item"><span class="project-name">Geofence App</span> (Kotlin) – užívatelia v okolí, profily,
+            LiveData, RecyclerView, login/register, workers, geofence, viewmodel, SharedPreferences, DataBinding,
+            fragmenty</p>
+        <p class="project-item"><span class="project-name">Joinly — Diplomová práca</span> (Kotlin · Jetpack Compose · Firebase · Google Maps · MVVM) – Plnohodnotná Android aplikácia pre objavovanie a správu udalostí s 15+ modulmi. Single-Activity architektúra, Firebase Firestore real-time databáza, autentifikácia (email + Google Sign-In), real-time chat, QR check-in (CameraX + ML Kit), 6-faktorový odporúčací algoritmus, systém penalizácií za neúčasť, integrácia Google Maps API, Cloudinary, ZXing. Pokryté unit testmi.</p>
+
+        <h2 class="section-title">CERTIFIKÁTY</h2>
+
+        <div class="certificate-entry">
+            <p class="certificate-name">Autodesk – Certificate of Project Completion</p>
+            <p class="certificate-desc">Projekt v aplikácii Autodesk</p>
+        </div>
+
+        <div class="certificate-entry">
+            <p class="certificate-name">Ja Slovensko – Viac ako peniaze</p>
+            <p class="certificate-desc">Podnikateľské, ekonomické a finančné vzdelávanie</p>
+        </div>
+
+        <div class="certificate-entry">
+            <p class="certificate-name">Direct Language Lab – Certificate of Studies</p>
+            <p class="certificate-desc">Kurz angličtiny</p>
+        </div>
+
+        <div class="certificate-entry">
+            <p class="certificate-name">Selenium Java Test Framework &amp; Best Practices – Masterclass</p>
+            <p class="certificate-desc">Online kurz</p>
+        </div>
+
+        <div class="certificate-entry">
+            <p class="certificate-name">The Complete 2025 Software Testing Bootcamp</p>
+            <p class="certificate-desc">Online kurz</p>
+        </div>
+
+        <div class="two-column-section">
+            <div class="column">
+                <h2 class="section-title">JAZYKY</h2>
+                <div class="simple-list">
+                    <p><strong>Slovenčina</strong> – rodný jazyk</p>
+                    <p><strong>Angličtina</strong> – B2</p>
+                    <p><strong>Nemčina</strong> – A1</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <h2 class="section-title">ZÁUJMY</h2>
+                <div class="simple-list">
+                    <p>Volejbal, posilňovanie, kalistenika</p>
+                    <p>Náučná literatúra (príroda, zdravie, vesmír)</p>
+                    <p>Hra na gitare, game development</p>
+                    <p>Tvorba mobilných aplikácií</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body></html>
