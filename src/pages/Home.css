@@ -1,0 +1,209 @@
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.name {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #646cff 0%, #535bf2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.title {
+  font-size: 1.3rem;
+  color: #888;
+}
+
+.about, .contact, .cv-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.about h2, .contact h2, .cv-section h2 {
+  margin-bottom: 1rem;
+  color: #646cff;
+}
+
+/* Strengths and Weaknesses Section */
+.strengths-weaknesses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.strengths, .weaknesses {
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.strengths:hover, .weaknesses:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(100, 108, 255, 0.2);
+}
+
+.strengths {
+  border: 2px solid rgba(100, 200, 100, 0.3);
+}
+
+.strengths:hover {
+  border-color: rgba(100, 200, 100, 0.6);
+}
+
+.weaknesses {
+  border: 2px solid rgba(255, 150, 100, 0.3);
+}
+
+.weaknesses:hover {
+  border-color: rgba(255, 150, 100, 0.6);
+}
+
+.strengths h2 {
+  color: #64c864;
+  margin-bottom: 1rem;
+}
+
+.weaknesses h2 {
+  color: #ff9664;
+  margin-bottom: 1rem;
+}
+
+.strengths ul, .weaknesses ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.strengths li, .weaknesses li {
+  padding: 0.75rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.strengths li strong, .weaknesses li strong {
+  color: #000000;
+  font-size: 1rem;
+  display: block;
+}
+
+.strengths li span, .weaknesses li span {
+  color: #aaa;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding-left: 0;
+}
+
+.strengths li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0.75rem;
+  color: #64c864;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.weaknesses li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  top: 0.75rem;
+  color: #ff9664;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .strengths-weaknesses {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+.contact-info a {
+  color: #646cff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* CV Section */
+.cv-section {
+  text-align: center;
+}
+
+.cv-section p {
+  margin-bottom: 1.5rem;
+  color: #ccc;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #646cff 0%, #535bf2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(100, 108, 255, 0.3);
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(100, 108, 255, 0.5);
+}
+
+.download-icon {
+  font-size: 1.5rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.cv-note {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+}
+
+.cv-note code {
+  background-color: rgba(100, 108, 255, 0.2);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  color: #646cff;
+  font-family: 'Courier New', monospace;
+}

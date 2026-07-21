@@ -1,0 +1,235 @@
+.career-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.career-page h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #646cff 0%, #535bf2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.career-page h2 {
+  color: #646cff;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+/* Skills Section */
+.skills-section {
+  margin-bottom: 4rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-category {
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(100, 108, 255, 0.3);
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+
+.skill-category:hover {
+  border-color: #646cff;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(100, 108, 255, 0.2);
+}
+
+.skill-category h3 {
+  color: #646cff;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-badge {
+  padding: 0.5rem 1rem;
+  background-color: rgba(100, 108, 255, 0.15);
+  border: 1px solid rgba(100, 108, 255, 0.4);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #ccc;
+  transition: all 0.3s;
+}
+
+.skill-badge:hover {
+  background-color: rgba(100, 108, 255, 0.25);
+  color: white;
+}
+
+/* Progress/Timeline Section */
+.progress-section {
+  margin-bottom: 4rem;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #646cff, #535bf2);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 2rem;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -2.5rem;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #646cff;
+  border-radius: 50%;
+  border: 3px solid #242424;
+  box-shadow: 0 0 0 4px rgba(100, 108, 255, 0.2);
+}
+
+.timeline-content {
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(100, 108, 255, 0.2);
+}
+
+.period {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: rgba(100, 108, 255, 0.2);
+  color: #646cff;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content h3 {
+  color: #646cff;
+  margin: 0.5rem 0;
+  font-size: 1.4rem;
+}
+
+.description {
+  color: #aaa;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.achievements {
+  list-style: none;
+  padding-left: 0;
+}
+
+.achievements li {
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  color: #ccc;
+}
+
+.achievements li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #646cff;
+  font-weight: bold;
+}
+
+/* Goals Section */
+.goals-section {
+  margin-bottom: 2rem;
+}
+
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.goal-card {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(100, 108, 255, 0.3);
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+
+.goal-card:hover {
+  border-color: #646cff;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(100, 108, 255, 0.3);
+}
+
+.goal-card h3 {
+  color: #646cff;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.goal-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.goal-card li {
+  padding: 0.75rem;
+  padding-left: 2rem;
+  margin-bottom: 0.75rem;
+  background-color: rgba(100, 108, 255, 0.1);
+  border-radius: 8px;
+  position: relative;
+  color: #ccc;
+  transition: all 0.3s;
+}
+
+.goal-card li:hover {
+  background-color: rgba(100, 108, 255, 0.2);
+  padding-left: 2.5rem;
+}
+
+.goal-card li::before {
+  content: '→';
+  position: absolute;
+  left: 0.75rem;
+  color: #646cff;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 1rem;
+  }
+
+  .timeline-item {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-marker {
+    left: -1.9rem;
+  }
+}

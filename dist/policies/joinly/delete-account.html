@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zmazanie účtu a údajov - Joinly</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+        p, li {
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .info-box {
+            background-color: #e8f4fc;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .warning-box {
+            background-color: #fef9e7;
+            border-left: 4px solid #f39c12;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .step {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .step-number {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            text-align: center;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        a {
+            color: #3498db;
+        }
+        a:hover {
+            color: #2980b9;
+        }
+        .button-link {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .button-link:hover {
+            background-color: #2980b9;
+            color: white;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Zmazanie účtu a údajov - Joinly</h1>
+
+<div class="info-box">
+    <strong>Ako požiadať o zmazanie účtu:</strong> Momentálne appka nemá tlačidlo na okamžité
+    zmazanie účtu priamo v appke. O zmazanie účtu a všetkých s ním spojených údajov požiadate
+    e-mailom.
+</div>
+
+<h2>Postup</h2>
+
+<div class="step">
+    <span class="step-number">1</span>
+    Napíšte e-mail na adresu <strong>marcel.sotak123@gmail.com</strong>
+</div>
+
+<div class="step">
+    <span class="step-number">2</span>
+    Do predmetu alebo textu e-mailu uveďte e-mailovú adresu, pod ktorou ste v appke
+    registrovaný/á, a text: <em>„Žiadosť o zmazanie účtu Joinly“</em>
+</div>
+
+<a href="mailto:marcel.sotak123@gmail.com?subject=%C5%BDiados%C5%A5%20o%20zmazanie%20%C3%BA%C4%8Dtu%20Joinly&body=E-mailov%C3%A1%20adresa%2C%20pod%20ktorou%20som%20registrovan%C3%BD%2Fregistrovan%C3%A1%20v%20Joinly%3A%20" class="button-link">
+    Napísať žiadosť o zmazanie účtu
+</a>
+
+<h2>Čo sa zmaže (do 30 dní od žiadosti)</h2>
+<ul>
+    <li>Profilové údaje (meno, bio, profilová fotografia, preferované kategórie)</li>
+    <li>Váš účet a prihlasovacie údaje (Firebase Authentication)</li>
+    <li>Vaše osobné údaje z databázy (Firestore)</li>
+    <li>Vaše fotografie nahrané v appke (Cloudinary)</li>
+</ul>
+
+<h2>Čo môže zostať zachované aj po zmazaní účtu</h2>
+<ul>
+    <li>Udalosti, ktoré ste vytvorili (aby neprišli o históriu ostatní účastníci) — ale
+        bez väzby na váš osobný profil</li>
+    <li>Správy, ktoré ste poslali v chate iných udalostí (v rámci histórie danej udalosti,
+        anonymizované)</li>
+    <li>Agregované/anonymizované štatistiky, ktoré neumožňujú identifikáciu osoby</li>
+</ul>
+
+<div class="warning-box">
+    <strong>Lehota spracovania žiadosti:</strong> do 30 dní od doručenia žiadosti.
+</div>
+
+<h2>Kontakt</h2>
+<p>
+    V prípade otázok týkajúcich sa zmazania účtu alebo údajov nás kontaktujte:
+</p>
+<p>
+    <strong>E-mail:</strong> <a href="mailto:marcel.sotak123@gmail.com">marcel.sotak123@gmail.com</a>
+</p>
+
+<div class="footer">
+    <p>Naposledy aktualizované: júl 2026</p>
+    <p>
+        <a href="privacy-policy.html">Zásady ochrany osobných údajov</a> |
+        <a href="terms-of-service.html">Podmienky používania</a>
+    </p>
+</div>
+
+</body>
+</html>

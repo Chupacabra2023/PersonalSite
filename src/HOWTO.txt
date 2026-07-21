@@ -1,0 +1,30 @@
+====================================================
+DEPLOY NA GITHUB PAGES - MANUALNE
+====================================================
+
+1. Otvor terminal v priecinku personal-website:
+   cd .../personalnaWebstranka/personal-website
+
+2. Spusti:
+   npm run deploy
+
+To je vsetko. Prikaz automaticky:
+  - zbuilduje projekt (vytvori dist priecinok)
+  - pushne dist na vetvu gh-pages na GitHub
+
+Zmeny su zive za 1-2 minuty na:
+https://chupacabra2023.github.io/PersonalSite
+
+
+====================================================
+AK CHCES PRIDAT NOVY STATICKY SUBOR
+(napr. dalsiu policy stranku)
+====================================================
+
+1. Daj subor do:
+   personal-website/public/...
+
+2. Spusti:
+   npm run deploy
+
+Subory v public/ sa automaticky skopiruju do dist pocas buildu.
