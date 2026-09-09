@@ -66,6 +66,17 @@ export const projects: Project[] = [
     deleteAccountUrl: '/PersonalSite/policies/joinly/delete-account.html',
   },
   {
+    id: 'Phone4All',
+    title: 'Phone4All',
+    category: 'personal',
+    description: 'Mobilná party hra pre skupiny priateľov s 12 mini-hrami, ktoré je možné hrať v tímoch. Vyvíjaná v Kotlin Multiplatform pre Android a iOS.',
+    descriptionEn: 'A mobile party game for groups of friends featuring 12 mini-games playable in teams. Built with Kotlin Multiplatform for Android and iOS.',
+    longDescription: 'Phone4All je mobilná party hra určená na spoločnú zábavu v skupine – ideálna na večierky, rodinné stretnutia alebo akcie s priateľmi. Aplikácia obsahuje 12 rôznorodých mini-hier, ktoré je možné hrať v tímoch striedajúcich sa na jednom telefóne.\n\nAplikácia je postavená na Kotlin Multiplatform s Compose Multiplatform pre UI, čo umožňuje zdieľať väčšinu logiky a rozhrania medzi Android a iOS z jedného kódu.\n\nHra funguje plne offline – nevyžaduje účet ani internetové pripojenie, všetky hry prebiehajú lokálne na zariadení. Dôraz je kladený na jednoduché ovládanie, rýchly štart hry a zábavný priebeh vhodný pre rôzne vekové kategórie a veľkosti skupín.',
+    longDescriptionEn: 'Phone4All is a mobile party game designed for group entertainment – perfect for parties, family gatherings, or hangouts with friends. The app includes 12 varied mini-games that can be played in teams taking turns on a single phone.\n\nThe app is built with Kotlin Multiplatform using Compose Multiplatform for the UI, allowing most of the logic and interface to be shared between Android and iOS from a single codebase.\n\nThe game works fully offline – no account or internet connection is required, as all games run locally on the device. The focus is on simple controls, a quick game start, and an entertaining experience suitable for different age groups and group sizes.',
+    technologies: ['Kotlin Multiplatform', 'Compose Multiplatform', 'Android', 'iOS'],
+    policyPath: 'policies/phone4all',
+  },
+  {
     id: 'Time Reminder',
     title: 'Time Reminder',
     category: 'personal',
