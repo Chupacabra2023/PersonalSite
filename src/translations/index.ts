@@ -29,9 +29,7 @@ export interface Translations {
     about: string;
     aboutText: string;
     strengths: string;
-    weaknesses: string;
     strengthsList: StrengthWeakness[];
-    weaknessesList: StrengthWeakness[];
     contact: string;
     email: string;
     linkedin: string;
@@ -95,7 +93,6 @@ export const translations: Record<Language, Translations> = {
       aboutText:
         'Volám sa Marcel Soták a som študentom Fakulty elektrotechniky a informatiky, kde som v prvých troch ročníkoch študoval odbor Aplikovaná informatika. V súčasnosti som v poslednom ročníku so zameraním na kybernetickú bezpečnosť.\n\nVo voľnom čase sa venujem práci na vlastných projektoch, ktoré si stanovujem ako osobné ciele, a aktívne sa učím nové technológie. Baví ma objavovať nové oblasti v IT a rozširovať si znalosti praktickou formou.\n\nStredoškolské vzdelanie som získal na technickom lýceu na SPŠ, kde som si vybudoval technické základy a záujem o informatiku.\n\nOvládam anglický jazyk na úrovni B2 a nemecký jazyk na úrovni A1–A2. Zatiaľ nemám veľa pracovných skúseností priamo v IT sfére, keďže sa momentálne sústreďujem najmä na štúdium a rozvoj vlastných projektov.',
       strengths: 'Silné stránky',
-      weaknesses: 'Slabé stránky',
       strengthsList: [
         { title: 'Zodpovednosť a dochvíľnosť', desc: 'Som veľmi dochvíľny a beriem dohody vážne. Keď sa na niečom dohodneme, považujem to za záväzok.' },
         { title: 'Vnútorná motivácia a chuť učiť sa', desc: 'Vo voľnom čase sa aktívne zaujímam o nové témy (informatika, história, spoločenské dianie). Rád pracujem na vlastných projektoch a neustále sa posúvam dopredu.' },
@@ -112,23 +109,10 @@ export const translations: Record<Language, Translations> = {
         { title: 'Tvorivé myslenie', desc: 'Dokážem premýšľať tvorivo a vidieť veci z rôznych uhlov, čo využívam najmä pri programovaní a práci na aplikáciách.' },
         { title: 'Schopnosť prichádzať s nápadmi', desc: 'Často prichádzam s vlastnými nápadmi a riešeniami, nielen s hotovými postupmi.' },
       ],
-      weaknessesList: [
-        { title: 'Slabšia pamäť', desc: 'Moja krátkodobá pamäť nie je silná stránka, preto si veci rád zapisujem a snažím sa pracovať systematicky.' },
-        { title: 'Organizácia a poriadok', desc: 'Mám tendenciu k neporiadnosti, čo si uvedomujem a postupne na tom pracujem.' },
-        { title: 'Introvertnosť a uzavretejšia povaha', desc: 'Som skôr introvert, lepšie sa cítim v menších kolektívoch alebo pri samostatnej práci. Vo veľkých a neznámych skupinách som spočiatku hanblivejší.' },
-        { title: 'Opatrnosť v komunikácii', desc: 'Nehovorím o témach, v ktorých si nie som istý. Radšej sa najprv dôkladne pripravím, než by som hovoril nepresne.' },
-        { title: 'Emočné napätie pri dlhodobom strese', desc: 'Ak sa stres dlhšie hromadí, môže sa prejaviť náhle – najmä pri technických problémoch alebo neférovom správaní. Učím sa lepšie pracovať so stresom.' },
-        { title: 'Ranná produktivita', desc: 'Nie som ranný typ, najlepšie fungujem popoludní a večer. Ráno potrebujem viac času na „rozbeh".' },
-        { title: 'Rozptýliteľnosť', desc: 'Občas bývam nepozorný, preto sa snažím obmedzovať rušivé vplyvy a pracovať v blokoch.' },
-        { title: 'Tvrdohlavosť (čiastočne)', desc: 'Viem o sebe, že viem byť tvrdohlavý, no naučil som sa počúvať iných, rešpektovať ich názory a zvažovať rôzne pohľady.' },
-        { title: 'Hry ako forma oddychu', desc: 'Občas si zahrám hry na odreagovanie, no vedome si dávam pozor, aby to nešlo na úkor produktivity.' },
-        { title: 'Nervozita v sociálnych situáciách', desc: 'V neznámom prostredí alebo medzi novými ľuďmi môžem pôsobiť nervózne alebo rezervovane.' },
-        { title: 'Ťažkosti s dlhodobým udržaním tempa', desc: 'Pri projektoch, ktoré trvajú dlhší čas, potrebujem jasný cieľ a štruktúru, aby som si udržal konzistentné tempo.' },
-      ],
       contact: 'Kontakt',
       email: 'Email',
       linkedin: 'LinkedIn',
-      linkedinLabel: 'este nie je je hacknuty',
+      linkedinLabel: 'linkedin.com/in/marcel-soták',
       cv: 'Životopis',
       cvText: 'Stiahnite si môj životopis v textovom formáte:',
       cvDownload: 'Stiahnuť životopis',
@@ -237,7 +221,6 @@ export const translations: Record<Language, Translations> = {
       aboutText:
         'My name is Marcel Soták and I am a student at the Faculty of Electrical Engineering and Informatics, where I spent the first three years studying Applied Informatics. I am currently in my final year, focusing on cybersecurity.\n\nIn my free time, I work on my own projects, which I set as personal goals, and I actively learn new technologies. I enjoy discovering new areas in IT and expanding my knowledge through practical experience.\n\nI completed my secondary education at a technical lyceum at SPŠ, where I built a technical foundation and developed an interest in computer science.\n\nI speak English at the B2 level and German at the A1–A2 level. I do not yet have much work experience directly in the IT field, as I am currently focused mainly on studying and developing my own projects.',
       strengths: 'Strengths',
-      weaknesses: 'Weaknesses',
       strengthsList: [
         { title: 'Responsibility and Punctuality', desc: 'I am very punctual and take agreements seriously. When we agree on something, I consider it a commitment.' },
         { title: 'Inner Motivation and Drive to Learn', desc: 'In my free time, I actively take interest in new topics (computer science, history, current affairs). I enjoy working on my own projects and constantly moving forward.' },
@@ -254,23 +237,10 @@ export const translations: Record<Language, Translations> = {
         { title: 'Creative Thinking', desc: 'I can think creatively and see things from different angles, which I use especially in programming and app development.' },
         { title: 'Ability to Generate Ideas', desc: 'I frequently come up with my own ideas and solutions, not just ready-made approaches.' },
       ],
-      weaknessesList: [
-        { title: 'Weaker Memory', desc: 'My short-term memory is not my strong suit, so I like to write things down and try to work systematically.' },
-        { title: 'Organization and Tidiness', desc: 'I tend toward messiness, which I am aware of and gradually working on.' },
-        { title: 'Introversion and Reserved Nature', desc: 'I am more of an introvert, feeling more comfortable in smaller groups or when working independently. In large and unfamiliar groups I am initially more shy.' },
-        { title: 'Caution in Communication', desc: 'I do not speak about topics I am not sure about. I prefer to first prepare thoroughly rather than speak inaccurately.' },
-        { title: 'Emotional Tension under Long-term Stress', desc: 'If stress accumulates for a longer period, it can manifest suddenly – especially with technical problems or unfair behavior. I am learning to better manage stress.' },
-        { title: 'Morning Productivity', desc: 'I am not a morning person; I function best in the afternoon and evening. In the morning I need more time to "warm up".' },
-        { title: 'Distractibility', desc: 'I am occasionally inattentive, so I try to limit distractions and work in blocks.' },
-        { title: 'Stubbornness (partially)', desc: 'I know I can be stubborn, but I have learned to listen to others, respect their opinions and consider different perspectives.' },
-        { title: 'Games as a Form of Rest', desc: 'I occasionally play games to unwind, but I consciously make sure it does not come at the expense of productivity.' },
-        { title: 'Nervousness in Social Situations', desc: 'In unfamiliar environments or among new people, I can come across as nervous or reserved.' },
-        { title: 'Difficulty Maintaining Long-term Pace', desc: 'For projects that last a longer time, I need a clear goal and structure to maintain a consistent pace.' },
-      ],
       contact: 'Contact',
       email: 'Email',
       linkedin: 'LinkedIn',
-      linkedinLabel: 'not available yet (hacked)',
+      linkedinLabel: 'linkedin.com/in/marcel-soták',
       cv: 'Resume',
       cvText: 'Download my resume in text format:',
       cvDownload: 'Download Resume',

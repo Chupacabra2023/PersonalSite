@@ -21,22 +21,11 @@ const Home = () => {
         <p style={{ whiteSpace: 'pre-line' }}>{t.aboutText}</p>
       </section>
 
-      <section className="strengths-weaknesses">
+      <section className="strengths-section">
         <div className="strengths">
           <h2>{t.strengths}</h2>
           <ul>
             {t.strengthsList.map((item, i) => (
-              <li key={i}>
-                <strong>{item.title}</strong>
-                <span>{item.desc}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="weaknesses">
-          <h2>{t.weaknesses}</h2>
-          <ul>
-            {t.weaknessesList.map((item, i) => (
               <li key={i}>
                 <strong>{item.title}</strong>
                 <span>{item.desc}</span>
@@ -51,7 +40,7 @@ const Home = () => {
         <div className="contact-info">
           <p><strong>{t.email}:</strong> marclus868@gmail.com</p>
           <p><strong>GitHub:</strong> <a href="https://github.com/Chupacabra2023" target="_blank" rel="noopener noreferrer">github.com/Chupacabra2023</a></p>
-          <p><strong>{t.linkedin}:</strong> <a href="" target="_blank" rel="noopener noreferrer">{t.linkedinLabel}</a></p>
+          <p><strong>{t.linkedin}:</strong> <a href="https://www.linkedin.com/in/marcel-sot%C3%A1k-26574a39b/" target="_blank" rel="noopener noreferrer">{t.linkedinLabel}</a></p>
         </div>
       </section>
 
