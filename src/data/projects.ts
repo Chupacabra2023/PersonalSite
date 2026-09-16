@@ -18,7 +18,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 'Custom Soundboard',
-    title: 'Custom Soundboard app',
+    title: 'Soundboard Studio',
     category: 'personal',
     description: 'Mobilná aplikácia typu soundboard s plne prispôsobiteľnými tlačidlami a podporou vlastných zvukov.',
     descriptionEn: 'A soundboard mobile app with fully customizable buttons and support for custom sounds.',
@@ -28,6 +28,17 @@ export const projects: Project[] = [
     googlePlayUrl: 'https://play.google.com/store/apps/details?id=sk.marcelsotak.soundboard',
     policyPath: 'policies',
     deleteAccountUrl: '/PersonalSite/policies/delete-account.html',
+  },
+  {
+    id: 'SoundPads Studio',
+    title: 'SoundPads Studio',
+    category: 'personal',
+    description: 'Mobilná aplikácia typu soundboard s plne prispôsobiteľnými tlačidlami a podporou vlastných zvukov, pripravená pre Apple App Store.',
+    descriptionEn: 'A soundboard mobile app with fully customizable buttons and support for custom sounds, built for the Apple App Store.',
+    longDescription: 'SoundPads Studio je iOS verzia aplikácie Soundboard Studio, vytvorená pod novým názvom kvôli pravidlám Apple App Store. Funkčne ide o identickú aplikáciu – používateľ pracuje so zvukmi pomocou prehľadnej mriežky tlačidiel, pričom každé tlačidlo je možné individuálne prispôsobiť (názov, farba, kategória, obľúbené).\n\nPo kliknutí na tlačidlo sa zobrazí prehrávač s progress barom, kde je možné zvuk prehrávať, pozastaviť, loopovať alebo meniť rýchlosť prehrávania. Používateľ si môže vytvárať vlastné zvuky pomocou vstavaného nahrávača alebo ich importovať priamo zo zariadenia.\n\nAplikácia podporuje správu kategórií, filtrovanie tlačidiel a ukladanie nastavení, pričom kladie dôraz na jednoduchosť, rýchly prístup k zvukom a možnosť plnej personalizácie.',
+    longDescriptionEn: 'SoundPads Studio is the iOS release of the Soundboard Studio app, published under a new name due to Apple App Store rules. Functionally it is the same app – the user works with sounds using a well-organized grid of buttons, where each button can be individually customized (name, color, category, favorite).\n\nClicking a button opens a player with a progress bar where you can play, pause, loop or change the playback speed. The user can create custom sounds using the built-in recorder or import them directly from the device.\n\nThe app supports category management, button filtering and settings saving, while emphasizing simplicity, quick access to sounds and the option for full personalization.',
+    technologies: ['Flutter', 'Dart'],
+    policyPath: 'policies/soundpads',
   },
   {
     id: 'Snowball Roll Down',
