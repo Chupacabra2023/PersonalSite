@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zmazanie účtu a údajov - Stretko</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+        p, li {
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .info-box {
+            background-color: #e8f4fc;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .warning-box {
+            background-color: #fef9e7;
+            border-left: 4px solid #f39c12;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .step {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .step-number {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            text-align: center;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        a {
+            color: #3498db;
+        }
+        a:hover {
+            color: #2980b9;
+        }
+        .button-link {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .button-link:hover {
+            background-color: #2980b9;
+            color: white;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        .lang {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+<p class="lang"><a href="delete-account.html">English</a></p>
+
+<h1>Zmazanie účtu a údajov - Stretko</h1>
+
+<p>
+    Táto stránka popisuje, ako zmazať účet v aplikácii <strong>Stretko</strong>
+    (vývojár: Marcel Šoták, balík <em>com.joinly.app</em>) a všetky súvisiace
+    údaje.
+</p>
+
+<h2>Možnosť 1: Priamo v aplikácii (odporúčané)</h2>
+
+<div class="step">
+    <span class="step-number">1</span>
+    Otvorte aplikáciu Stretko a prihláste sa.
+</div>
+
+<div class="step">
+    <span class="step-number">2</span>
+    Otvorte <strong>Nastavenia</strong>.
+</div>
+
+<div class="step">
+    <span class="step-number">3</span>
+    Ťuknite na <strong>Zmazať účet</strong> a potvrďte. Účet sa zmaže okamžite.
+</div>
+
+<h2>Možnosť 2: Žiadosť e-mailom (ak už aplikáciu nemáte)</h2>
+
+<div class="step">
+    <span class="step-number">1</span>
+    Pošlite e-mail na <strong>marcel.sotak123@gmail.com</strong>
+    <strong>z e-mailovej adresy, s ktorou ste registrovaný</strong>.
+</div>
+
+<div class="step">
+    <span class="step-number">2</span>
+    Do predmetu napíšte <em>„Zmazanie účtu Stretko“</em>. Ak ste sa prihlasovali
+    cez Google, uveďte adresu Google účtu.
+</div>
+
+<a href="mailto:marcel.sotak123@gmail.com?subject=Zmazanie%20%C3%BA%C4%8Dtu%20Stretko&body=E-mail%2C%20s%20ktor%C3%BDm%20som%20registrovan%C3%BD%20v%20Stretko%3A%20" class="button-link">
+    Poslať žiadosť o zmazanie účtu
+</a>
+
+<div class="warning-box">
+    <strong>Lehota:</strong> e-mailovú žiadosť vybavíme do 30 dní. Z dôvodu
+    ochrany vášho účtu môžeme overiť, že žiadosť posiela jeho majiteľ.
+</div>
+
+<h2>Čo sa zmaže</h2>
+<ul>
+    <li>Profil (meno, e-mail, bio, profilová fotka, preferované kategórie)</li>
+    <li>Prihlasovací účet (Firebase Authentication)</li>
+    <li>Udalosti, ktoré ste vytvorili, vrátane ich chatu</li>
+    <li>Vaše správy v chatoch udalostí aj súkromné správy</li>
+    <li>Vaša účasť na udalostiach a miesta v poradovníkoch</li>
+    <li>Priatelia, žiadosti o priateľstvo, pozvánky a notifikácie</li>
+    <li>Nahlásenia, ktoré ste odoslali</li>
+    <li>Obrázky nahraté do aplikácie (Cloudinary) – na požiadanie e-mailom do
+        30 dní, zatiaľ sa nemažú automaticky</li>
+</ul>
+
+<h2>Čo môže zostať</h2>
+<ul>
+    <li>Nahlásenia, ktoré na váš obsah poslali iní používatelia, a záznam
+        o zablokovaní, ak bol účet zablokovaný za porušenie pravidiel –
+        najdlhšie 1 rok, na posúdenie prípadu</li>
+    <li>Anonymné štatistiky a hlásenia pádov (Google Analytics, Crashlytics),
+        ktoré vás neidentifikujú – podľa lehôt Google</li>
+    <li>Kópia údajov v telefóne – zmaže sa odinštalovaním aplikácie</li>
+</ul>
+
+<h2>Zmazanie len niektorých údajov</h2>
+<p>
+    Ak nechcete zmazať celý účet, môžete v aplikácii kedykoľvek upraviť
+    alebo odstrániť profilovú fotku a bio, zmazať vlastné udalosti alebo sa
+    z udalostí odhlásiť. O zmazanie iných konkrétnych údajov (napr. obrázkov)
+    môžete požiadať e-mailom.
+</p>
+
+<h2>Kontakt</h2>
+<p>
+    <strong>E-mail:</strong> <a href="mailto:marcel.sotak123@gmail.com">marcel.sotak123@gmail.com</a>
+</p>
+
+<div class="footer">
+    <p>Posledná aktualizácia: 28. september 2026</p>
+    <p>
+        <a href="privacy-policy-sk.html">Zásady ochrany súkromia</a> |
+        <a href="terms-of-service-sk.html">Podmienky používania</a>
+    </p>
+</div>
+
+</body>
+</html>

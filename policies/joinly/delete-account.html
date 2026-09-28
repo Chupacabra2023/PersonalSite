@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delete Account & Data - Joinly</title>
+    <title>Delete Account & Data - Stretko</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -83,69 +83,105 @@
             color: #7f8c8d;
             font-style: italic;
         }
+        .lang {
+            text-align: right;
+        }
     </style>
 </head>
 <body>
 
-<h1>Delete Account & Data - Joinly</h1>
+<p class="lang"><a href="delete-account-sk.html">Slovensky</a></p>
 
-<div class="info-box">
-    <strong>How to request account deletion:</strong> The app does not currently
-    have an in-app "delete account" button. To delete your account and all
-    associated data, please request it by email.
-</div>
+<h1>Delete Account &amp; Data - Stretko</h1>
 
-<h2>Steps</h2>
+<p>
+    This page explains how to delete your account in the <strong>Stretko</strong>
+    app (developer: Marcel Šoták, package <em>com.joinly.app</em>) and all
+    associated data.
+</p>
+
+<h2>Option 1: Directly in the app (recommended)</h2>
 
 <div class="step">
     <span class="step-number">1</span>
-    Send an email to <strong>marcel.sotak123@gmail.com</strong>
+    Open the Stretko app and sign in.
 </div>
 
 <div class="step">
     <span class="step-number">2</span>
-    In the subject or body of the email, include the email address you are
-    registered with in the app, and the text: <em>"Joinly account deletion
-    request"</em>
+    Open <strong>Settings</strong>.
 </div>
 
-<a href="mailto:marcel.sotak123@gmail.com?subject=Joinly%20account%20deletion%20request&body=Email%20address%20I%20am%20registered%20with%20in%20Joinly%3A%20" class="button-link">
+<div class="step">
+    <span class="step-number">3</span>
+    Tap <strong>Delete account</strong> and confirm. The account is deleted
+    immediately.
+</div>
+
+<h2>Option 2: Request by email (if you no longer have the app)</h2>
+
+<div class="step">
+    <span class="step-number">1</span>
+    Send an email to <strong>marcel.sotak123@gmail.com</strong>
+    <strong>from the email address you registered with</strong>.
+</div>
+
+<div class="step">
+    <span class="step-number">2</span>
+    Use the subject <em>"Stretko account deletion"</em>. If you signed in with
+    Google, include your Google account address.
+</div>
+
+<a href="mailto:marcel.sotak123@gmail.com?subject=Stretko%20account%20deletion&body=Email%20address%20I%20am%20registered%20with%20in%20Stretko%3A%20" class="button-link">
     Send account deletion request
 </a>
 
-<h2>What Gets Deleted (within 30 days of the request)</h2>
-<ul>
-    <li>Profile data (name, bio, profile photo, preferred categories)</li>
-    <li>Your account and login credentials (Firebase Authentication)</li>
-    <li>Your personal data from the database (Firestore)</li>
-    <li>Your photos uploaded in the app (Cloudinary)</li>
-</ul>
-
-<h2>What May Remain After Account Deletion</h2>
-<ul>
-    <li>Events you created (so other participants don't lose their history) —
-        but without any link to your personal profile</li>
-    <li>Messages you sent in other events' chats (kept as part of that event's
-        history, anonymized)</li>
-    <li>Aggregated/anonymized statistics that do not allow identification of a
-        person</li>
-</ul>
-
 <div class="warning-box">
-    <strong>Processing time:</strong> up to 30 days from receipt of the request.
+    <strong>Processing time:</strong> email requests are handled within 30
+    days. To protect your account, we may verify that the request comes from
+    its owner.
 </div>
 
-<h2>Contact</h2>
+<h2>What Gets Deleted</h2>
+<ul>
+    <li>Profile (name, email, bio, profile photo, preferred categories)</li>
+    <li>Login account (Firebase Authentication)</li>
+    <li>Events you created, including their chat</li>
+    <li>Your messages in event chats and your direct messages</li>
+    <li>Your event attendance and waitlist spots</li>
+    <li>Friends, friend requests, invitations and notifications</li>
+    <li>Reports you submitted</li>
+    <li>Images uploaded in the app (Cloudinary) – on request by email within
+        30 days, not yet deleted automatically</li>
+</ul>
+
+<h2>What May Remain</h2>
+<ul>
+    <li>Reports other users submitted about your content, and the suspension
+        record if the account was suspended for breaking the rules – for at
+        most 1 year, to review the case</li>
+    <li>Anonymous statistics and crash reports (Google Analytics,
+        Crashlytics) that do not identify you – per Google's retention
+        periods</li>
+    <li>The copy of data on your phone – removed when you uninstall the
+        app</li>
+</ul>
+
+<h2>Deleting Only Some Data</h2>
 <p>
-    If you have any questions about deleting your account or data, please
-    contact us:
+    If you don't want to delete your whole account, you can at any time edit or
+    remove your profile photo and bio, delete your own events, or leave events
+    in the app. You can request deletion of other specific data (e.g. images)
+    by email.
 </p>
+
+<h2>Contact</h2>
 <p>
     <strong>Email:</strong> <a href="mailto:marcel.sotak123@gmail.com">marcel.sotak123@gmail.com</a>
 </p>
 
 <div class="footer">
-    <p>Last updated: July 2026</p>
+    <p>Last updated: September 28, 2026</p>
     <p>
         <a href="privacy-policy.html">Privacy Policy</a> |
         <a href="terms-of-service.html">Terms of Service</a>

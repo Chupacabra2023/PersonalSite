@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Joinly</title>
+    <title>Privacy Policy - Stretko</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -28,6 +28,30 @@
         ul {
             padding-left: 20px;
         }
+        a {
+            color: #3498db;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.95em;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f8f9fa;
+        }
+        .table-wrap {
+            overflow-x: auto;
+        }
+        .lang {
+            text-align: right;
+        }
         .last-updated {
             color: #7f8c8d;
             font-style: italic;
@@ -43,105 +67,235 @@
 </head>
 <body>
 
-<h1>Privacy Policy - Joinly</h1>
-<p class="last-updated">Last updated: July 2026</p>
+<p class="lang"><a href="privacy-policy-sk.html">Slovensky</a></p>
+
+<h1>Privacy Policy - Stretko</h1>
+<p class="last-updated">Last updated: September 28, 2026</p>
 
 <h2>1. Data Controller</h2>
 <p>
-    The data controller for the Joinly application is Marcel Šoták (hereinafter "we").
-    This Privacy Policy explains what personal data we collect, how we use it, and
-    what rights you have.
+    The data controller for the Stretko application (package
+    <em>com.joinly.app</em>, formerly "Joinly") is Marcel Šoták (hereinafter
+    "we"). This policy explains what personal data we process, why, where it is
+    stored, and what rights you have.
 </p>
+<p>Contact: <strong>marcel.sotak123@gmail.com</strong></p>
 
-<h2>2. What Data We Collect</h2>
-<ul>
-    <li>Registration data: name, email address</li>
-    <li>Profile data: profile photo, bio, preferred event categories</li>
-    <li>Location: GPS coordinates (only while actively using the map, with your consent)</li>
-    <li>Event content: title, description, images, date, location</li>
-    <li>Chat messages: text messages sent within events</li>
-    <li>Technical data: Firebase device ID (for notifications)</li>
-</ul>
-
-<h2>3. Purpose of Processing</h2>
-<ul>
-    <li>Providing app functionality (joining events, chat, map)</li>
-    <li>Personalized event recommendations</li>
-    <li>Safety and moderation (report system, blocking)</li>
-    <li>Notifications before events (only with your consent)</li>
-    <li>Sharing your profile with other app users</li>
-</ul>
-
-<h2>4. Data Sharing</h2>
+<h2>2. Age Requirement</h2>
 <p>
-    We do not share your data with third parties for marketing purposes. We use
-    the following external services:
+    Stretko is intended only for people aged <strong>16 and older</strong>.
+    Before registering (by email or with Google) you must confirm that you are
+    at least 16 years old. We do not knowingly collect data from anyone under
+    16. If we learn that an account belongs to a younger person, we delete it.
+    If you know of such an account, please contact us.
 </p>
+
+<h2>3. What Data We Collect</h2>
 <ul>
-    <li>Google Firebase (Auth, Firestore, Storage) — data storage, authentication</li>
-    <li>Cloudinary — storage of event and profile images</li>
-    <li>Google Cloud (Vision API, Natural Language API) — automated moderation
-        of uploaded images and text (inappropriate content detection), processed
-        anonymously, results are not stored anywhere</li>
-    <li>Google Maps Platform — map and location display</li>
-    <li>Ticketmaster API — external events (display only, we do not send any
-        personal data)</li>
+    <li><strong>Registration data:</strong> name, email address, password
+        (managed by Firebase Authentication, we never see it in readable form)
+        or Google account data when signing in with Google</li>
+    <li><strong>Profile:</strong> profile photo, bio, preferred event
+        categories</li>
+    <li><strong>Location:</strong> device GPS coordinates, only while using the
+        map and only with your consent</li>
+    <li><strong>Content you create:</strong> events (title, description,
+        images, date, place), event chat messages and direct messages, event
+        ratings</li>
+    <li><strong>In-app activity:</strong> event attendance, waitlists,
+        check-ins, favorites, friends, invitations, reports and no-show
+        records</li>
+    <li><strong>Technical data:</strong> push notification token (FCM),
+        installation ID, advertising ID, device and crash data, anonymous usage
+        statistics</li>
 </ul>
 
-<h2>5. Data Retention</h2>
+<h2>4. Purpose and Legal Basis</h2>
+<ul>
+    <li><strong>Providing the app</strong> (account, events, chat, map,
+        invitations, friends) – performance of a contract (Art. 6(1)(b)
+        GDPR)</li>
+    <li><strong>Location and notifications</strong> – your consent
+        (Art. 6(1)(a)). You can withdraw it at any time in your phone
+        settings.</li>
+    <li><strong>Safety and moderation</strong> (automated text and image
+        checks, reports, blocking, no-show penalties) – legitimate interest in a
+        safe community (Art. 6(1)(f))</li>
+    <li><strong>Event recommendations</strong> – performance of a contract;
+        calculated directly on your device</li>
+    <li><strong>Crash reports and statistics</strong> – legitimate interest in
+        fixing bugs and improving the app</li>
+    <li><strong>Ads (AdMob)</strong> – personalized ads only with your consent,
+        given on first launch (Google UMP). Without consent, non-personalized
+        ads are shown.</li>
+</ul>
+
+<h2>5. What Other Users Can See</h2>
 <p>
-    We retain your data for as long as your account is active. After account
-    deletion, we delete your personal data within 30 days. Chat messages may
-    remain stored as part of an event's history.
+    Other signed-in users can see your name, profile photo, bio, the events you
+    created and your event attendance. Event chat messages are visible only to
+    that event's attendees and creator. Direct messages are visible only to the
+    two participants. <strong>Your email address is not shown to other
+    users.</strong>
 </p>
 
-<h2>6. Your Rights (GDPR)</h2>
+<h2>6. Where Data Is Stored</h2>
+<div class="table-wrap">
+<table>
+    <tr>
+        <th>Data</th>
+        <th>Service (processor)</th>
+        <th>Location</th>
+    </tr>
+    <tr>
+        <td>Profiles, events, messages, attendance, friends, invitations, reports</td>
+        <td>Google Firebase – Cloud Firestore</td>
+        <td>European Union (multi-region <em>eur3</em>: Belgium and the Netherlands)</td>
+    </tr>
+    <tr>
+        <td>Server-side processing (moderation, invitations, account deletion, private events)</td>
+        <td>Google Cloud Functions</td>
+        <td>EU (Belgium, <em>europe-west1</em>); some automated background tasks
+            (sending push notifications, cleaning up old events) run in the
+            USA</td>
+    </tr>
+    <tr>
+        <td>Login data (email, password in encrypted form)</td>
+        <td>Firebase Authentication</td>
+        <td>Google global infrastructure (may include the USA)</td>
+    </tr>
+    <tr>
+        <td>Event images and profile photos</td>
+        <td>Cloudinary</td>
+        <td>Cloudinary servers (may be outside the EU, mainly in the USA)</td>
+    </tr>
+    <tr>
+        <td>Push notifications</td>
+        <td>Firebase Cloud Messaging</td>
+        <td>Google global infrastructure</td>
+    </tr>
+    <tr>
+        <td>Usage statistics and crash reports</td>
+        <td>Google Analytics for Firebase, Firebase Crashlytics</td>
+        <td>Google global infrastructure (may include the USA)</td>
+    </tr>
+    <tr>
+        <td>Ads</td>
+        <td>Google AdMob</td>
+        <td>Google global infrastructure (may include the USA)</td>
+    </tr>
+    <tr>
+        <td>Map, place search</td>
+        <td>Google Maps Platform, Google Places</td>
+        <td>Google global infrastructure</td>
+    </tr>
+    <tr>
+        <td>Copy of events and settings (for faster loading and offline mode)</td>
+        <td>Local storage on your phone</td>
+        <td>Only on your device; removed when you uninstall the app</td>
+    </tr>
+</table>
+</div>
+<p>
+    For transfers outside the EU (mainly to the USA) we rely on the GDPR
+    safeguards provided by these processors – the EU-U.S. Data Privacy
+    Framework and the European Commission's Standard Contractual Clauses. All
+    communication between the app and the servers is encrypted (HTTPS).
+</p>
+
+<h2>7. Data Sharing</h2>
+<p>
+    We do not sell your data or share it with third parties for marketing
+    purposes. Data is processed only by the processors listed above and
+    additionally:
+</p>
+<ul>
+    <li><strong>Google Cloud Vision API and Natural Language API</strong> –
+        automated checks of uploaded images and texts for inappropriate
+        content. Check results are not stored.</li>
+    <li><strong>Ticketmaster and public event calendars</strong> – we only
+        import public events from them. We do not send them any of your data.
+        Tickets are purchased outside the app.</li>
+</ul>
+
+<h2>8. Data Retention</h2>
+<ul>
+    <li>Account data is kept for as long as you have an account.</li>
+    <li>Events are deleted automatically after they end (usually within a few
+        days, at most 1 year after the event).</li>
+    <li>If an account is suspended for breaking the rules, its data is kept
+        for review of the case for at most 1 year.</li>
+    <li>Crash reports and statistics are kept by Google according to its own
+        retention periods (generally no longer than 14 months).</li>
+</ul>
+
+<h2>9. Account Deletion</h2>
+<p>
+    You can delete your account at any time <strong>directly in the app:
+    Settings → Delete account</strong>. This immediately deletes your profile,
+    the events you created, your messages (event chats and direct messages),
+    your event attendance, friends, invitations, reports you submitted and the
+    login account itself.
+</p>
+<p>
+    Images uploaded to Cloudinary are not yet deleted automatically – we delete
+    them within 30 days on request by email. If you no longer have the app, you
+    can also request deletion on the web:
+    <a href="delete-account.html">Delete Account &amp; Data</a>.
+</p>
+
+<h2>10. Your Rights (GDPR)</h2>
 <p>You have the right to:</p>
 <ul>
-    <li>Access your personal data</li>
-    <li>Correct inaccurate data</li>
-    <li>Erase your data (right to be forgotten)</li>
-    <li>Data portability</li>
-    <li>Object to processing</li>
+    <li>access your personal data,</li>
+    <li>correct inaccurate data (most of it you can edit in your profile),</li>
+    <li>erasure ("right to be forgotten"),</li>
+    <li>restriction of processing and data portability,</li>
+    <li>object to processing based on legitimate interest,</li>
+    <li>withdraw consent at any time (location, notifications, personalized
+        ads),</li>
+    <li>lodge a complaint with a supervisory authority, in Slovakia the
+        <strong>Office for Personal Data Protection of the Slovak
+        Republic</strong> (Hraničná 12, 820 07 Bratislava,
+        <a href="https://dataprotection.gov.sk">dataprotection.gov.sk</a>).</li>
 </ul>
 <p>
-    To exercise your rights, contact us at: <strong>marcel.sotak123@gmail.com</strong>
+    To exercise your rights, email <strong>marcel.sotak123@gmail.com</strong>.
+    We reply within 30 days.
 </p>
 
-<h2>7. Location</h2>
+<h2>11. Location</h2>
 <p>
-    The app requests permission to access device location solely to display
-    nearby events and calculate distance. Location is transmitted only to
-    Google Maps and is not permanently stored on our servers.
+    The app requests location access only to show nearby events and calculate
+    distance. Your current location is not permanently stored on our servers.
+    Only the locations of events you create yourself are stored.
 </p>
 
-<h2>8. Security</h2>
+<h2>12. Security</h2>
 <p>
-    All data is stored in Google Firebase (encrypted HTTPS transmission).
-    Passwords are managed via Firebase Authentication and are never stored
-    in unencrypted form.
+    Access to data is limited by database security rules (each user can modify
+    only their own data), transmission is encrypted and passwords are managed by
+    Firebase Authentication. However, no internet service can guarantee
+    complete security.
 </p>
 
-<h2>9. Children</h2>
+<h2>13. Changes to This Policy</h2>
 <p>
-    Joinly is not intended for children under the age of 13. We do not
-    knowingly collect personal data from anyone under the age of 13.
+    We will inform you of material changes within the app. The current version
+    is always available on this page.
 </p>
 
-<h2>10. Changes to This Policy</h2>
+<h2>14. Contact</h2>
 <p>
-    We will inform you of changes to this policy within the app. By continuing
-    to use the app after a change, you agree to the updated policy.
-</p>
-
-<h2>11. Contact</h2>
-<p>
-    If you have any questions or complaints, please contact us:<br>
-    Email: <strong>marcel.sotak123@gmail.com</strong>
+    Questions and complaints: <strong>marcel.sotak123@gmail.com</strong>
 </p>
 
 <div class="footer">
-    Joinly — an app for discovering and organizing events.
+    <p>Stretko — an app for discovering and organizing events.</p>
+    <p>
+        <a href="terms-of-service.html">Terms of Service</a> |
+        <a href="delete-account.html">Delete Account</a>
+    </p>
 </div>
 
 </body>
