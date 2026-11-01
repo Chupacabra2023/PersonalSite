@@ -12,16 +12,16 @@
           var decoded = l.search.slice(1).split('&').map(function (s) {
             return s.replace(/~and~/g, '&');
           });
+          // Old-style links (/PersonalSite/projects) -> HashRouter (/PersonalSite/#/projects)
           window.history.replaceState(
             null, null,
-            l.pathname.slice(0, -1) + decoded[0] +
-            (decoded[1] ? '?' + decoded[1] : '') +
-            l.hash
+            l.pathname + '#' + decoded[0] +
+            (decoded[1] ? '?' + decoded[1] : '')
           );
         }
       }(window.location));
     </script>
-    <script type="module" crossorigin src="/PersonalSite/assets/index-BRqfbzRI.js"></script>
+    <script type="module" crossorigin src="/PersonalSite/assets/index-Cp0eGGeb.js"></script>
     <link rel="stylesheet" crossorigin href="/PersonalSite/assets/index-DHjoRY-f.css">
   </head>
   <body>
